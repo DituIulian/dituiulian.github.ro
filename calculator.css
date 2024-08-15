@@ -2,10 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #343a40;
     color: white;
-    display: flex;
+    display: auto;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     margin: 0;
 }
 
@@ -14,18 +14,18 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    max-width: 280px;
 }
 
 #display {
-    width: 100%;
+    width: 92%;
     max-width: 280px;
     height: 50px;
     margin: 0 auto 10px auto;
-    text-align: right;
+    text-align: center;
     padding: 10px;
     font-size: 1.5em;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     background-color: #212529;
     color: white;
@@ -37,6 +37,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    max-width: 280px;
+    
 }
 
 button {
@@ -57,20 +59,76 @@ button:active {
     background-color: #4e555b;
 }
 
-@media screen and (max-width: 768px) {
+.calculator-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - );
+    padding: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
     .navbar {
         flex-direction: column;
-        /* Aliniază elementele pe verticală */
+        /* Navigarea pe mobil */
     }
 
-    .navbar-links {
-        flex-direction: column;
-        /* Link-urile sunt afișate pe verticală */
-        gap: 10px;
-        /* Reduce spațiul între link-uri */
+    #display {
+        width: 100%;
+        font-size: 0.5em;
     }
 
-    .navbar-login {
+    .calculator-button {
+        width: 100%;
         margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #display {
+        max-width: 400px;
+        font-size: 1.5em;
+    }
+
+    .calculator-button {
+        width: auto;
+        padding: 12px 24px;
+    }
+}
+@media screen and (min-width: 901px) {
+    body {
+        font-size: 18px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    #display {
+        max-width: 500px;
+        font-size: 2em;
+    }
+
+    .calculator-button {
+        padding: 15px 30px;
     }
 }

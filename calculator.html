@@ -6,9 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
+    <div class="app-wrapper">
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html">ACASA</a></li>
+            <li><a href="cv.html">C.V.</a></li>
+            <li><a href="despre.html">DESPRE</a></li>
+            <li><a href="aplicatii.html">APLICATII</a></li>
+        </ul>
+        <div class="navbar-login">
+            <button class="login-button">Login</button>
+        </div>
+    </nav>
+
+    <div class=" calculator-wrapper"> 
     <div class="calculator">
         <input type="text" id="display" disabled>
         <div class="buttons">
@@ -30,6 +53,8 @@
             <button onclick="calculateResult()">=</button>
             <button onclick="appendToDisplay('/')">/</button>
         </div>
+    </div>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
