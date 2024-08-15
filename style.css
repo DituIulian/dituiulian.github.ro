@@ -16,6 +16,14 @@ body {
     padding: 0 20px;
 }
 
+.app-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1E3A5F;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
 
 
 /* Stilizarea nav-bar-ului */
@@ -93,13 +101,13 @@ body {
     padding: 20px;
     background-color: #1E3A5F;
     border-radius: 10px;
-    
     color: white;
     /* Textul alb */
 }
 
 .text-content {
     max-width: 60%;
+    color: white;
     /* Limitează lățimea textului */
 }
 
@@ -137,6 +145,25 @@ body {
 }
 
 
+.download-cv-button {
+    padding: 10px 20px;
+    /* Spațiu interior al butonului */
+    background-color: #4CAF50;
+    /* Culoarea de fundal a butonului */
+    color: white;
+    /* Culoarea textului */
+    border: none;
+    /* Elimină border-ul */
+    border-radius: 5px;
+    /* Colțuri rotunjite */
+    cursor: pointer;
+    /* Cursor pointer */
+}
+
+.download-cv-button {
+    background-color: #29882e;
+    /* Culoarea butonului la hover */
+}
 
 
 
