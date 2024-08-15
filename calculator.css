@@ -1,0 +1,76 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #495057;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    max-width: 280px;
+    height: 50px;
+    margin: 0 auto 10px auto;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    background-color: #212529;
+    color: white;
+    display: block;
+   
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a6268;
+}
+
+button:active {
+    background-color: #4e555b;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        /* Aliniază elementele pe verticală */
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        /* Link-urile sunt afișate pe verticală */
+        gap: 10px;
+        /* Reduce spațiul între link-uri */
+    }
+
+    .navbar-login {
+        margin-top: 10px;
+    }
+}

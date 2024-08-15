@@ -1,11 +1,21 @@
 
 /* Reset de bază */
 body,
-h1,
-p,
 ul {
     margin: 0;
     padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+}
+
+p {
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 4px;
     font-family: Montserrat, sans-serif;
 }
 
@@ -72,17 +82,11 @@ body {
 /* Stilizarea butonului de login */
 .navbar-login .login-button {
     padding: 10px 20px;
-    /* Spațiu interior al butonului */
     background-color: #4CAF50;
-    /* Culoarea de fundal a butonului */
     color: white;
-    /* Culoarea textului */
     border: none;
-    /* Elimină border-ul */
     border-radius: 5px;
-    /* Colțuri rotunjite */
     cursor: pointer;
-    /* Cursor pointer */
 }
 
 .navbar-login .login-button:hover {
@@ -141,32 +145,55 @@ body {
 
 .site-footer strong {
     color: #4CAF50;
-    /* Colorează cu verde cuvântul "Login" */
+    
 }
 
 
 .download-cv-button {
     padding: 10px 20px;
-    /* Spațiu interior al butonului */
     background-color: #4CAF50;
-    /* Culoarea de fundal a butonului */
     color: white;
-    /* Culoarea textului */
     border: none;
-    /* Elimină border-ul */
     border-radius: 5px;
-    /* Colțuri rotunjite */
     cursor: pointer;
-    /* Cursor pointer */
 }
 
-.download-cv-button {
+.download-cv-button:hover {
     background-color: #29882e;
     /* Culoarea butonului la hover */
 }
 
+.puzzle-image{
+    float: right;
+    max-width: 100%;
+    margin-right: 20px;
+    
+       
+}
 
 
+
+.calculator-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #007bff;
+    /* Albastru închis */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator-button:hover {
+    background-color: #0056b3;
+    /* Albastru mai închis la hover */
+}
 
 
 @media screen and (max-width: 768px) {
