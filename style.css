@@ -1,0 +1,161 @@
+
+/* Reset de bază */
+body,
+h1,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #1E3A5F;
+    color: #333;
+    padding: 0 20px;
+}
+
+
+
+/* Stilizarea nav-bar-ului */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2e5c98;
+    box-shadow: 0px 0px 10px rgba(225, 219, 219, 0.1);
+   
+}
+
+
+.navbar-logo img {
+    height: 50px;
+}
+
+/* Stilizarea link-urilor */
+.navbar-links {
+    list-style: none;
+    /* Elimină bullet-urile */
+    display: flex;
+    /* Afișează link-urile pe orizontală */
+    gap: 20px;
+    /* Spațiu între link-uri */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    color: white;
+    /* Culoarea textului */
+    text-decoration: none;
+    /* Elimină sublinierea */
+    font-size: 16px;
+    /* Mărimea textului */
+}
+
+.navbar-links li a:hover {
+    color: #ddd;
+    /* Culoarea textului la hover */
+}
+
+/* Stilizarea butonului de login */
+.navbar-login .login-button {
+    padding: 10px 20px;
+    /* Spațiu interior al butonului */
+    background-color: #4CAF50;
+    /* Culoarea de fundal a butonului */
+    color: white;
+    /* Culoarea textului */
+    border: none;
+    /* Elimină border-ul */
+    border-radius: 5px;
+    /* Colțuri rotunjite */
+    cursor: pointer;
+    /* Cursor pointer */
+}
+
+.navbar-login .login-button:hover {
+    background-color: #29882e;
+    /* Culoarea butonului la hover */
+}
+
+
+/* Stilizarea secțiunii principale */
+.main-content {
+    display: flex;
+    /* Afișează textul și imaginea pe orizontală */
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #1E3A5F;
+    border-radius: 10px;
+    
+    color: white;
+    /* Textul alb */
+}
+
+.text-content {
+    max-width: 60%;
+    /* Limitează lățimea textului */
+}
+
+.image-content {
+    max-width: 40%;
+    /* Limitează lățimea imaginii */
+}
+
+.presentation-image {
+    width: 80%;
+    /* Imaginea ocupă întreaga lățime a containerului */
+    max-width: 400px;
+    /* Imaginea nu va depăși 500px */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Stilizarea footer-ului */
+.site-footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1E3A5F;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.site-footer p {
+    margin-bottom: 10px;
+}
+
+.site-footer strong {
+    color: #4CAF50;
+    /* Colorează cu verde cuvântul "Login" */
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        /* Aliniază elementele pe verticală */
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        /* Link-urile sunt afișate pe verticală */
+        gap: 10px;
+        /* Reduce spațiul între link-uri */
+    }
+
+    .navbar-login {
+        margin-top: 10px;
+    }
+}
