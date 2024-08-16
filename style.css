@@ -56,11 +56,8 @@ body {
 /* Stilizarea link-urilor */
 .navbar-links {
     list-style: none;
-    /* Elimină bullet-urile */
     display: flex;
-    /* Afișează link-urile pe orizontală */
     gap: 20px;
-    /* Spațiu între link-uri */
     margin: 0;
     padding: 0;
 }
@@ -81,13 +78,15 @@ body {
 
 /* Stilizarea butonului de login */
 .navbar-login .login-button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     background-color: #4CAF50;
     color: white;
     border: none;
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
+    
+    
 }
 
 .navbar-login .login-button:hover {
