@@ -67,7 +67,7 @@ body {
         font-size: 0.5em;
     }
 
-    .calculator-button {
+    .tic-tac-toe-button {
         width: 100%;
         margin-top: 10px;
     }
@@ -88,7 +88,7 @@ body {
         font-size: 1.5em;
     }
 
-    .calculator-button {
+    .tic-tac-toe-button {
         width: auto;
         padding: 12px 24px;
     }
@@ -108,7 +108,7 @@ body {
         font-size: 2em;
     }
 
-    .calculator-button {
+    .tic-tac-toe-button {
         padding: 15px 30px;
     }
 }

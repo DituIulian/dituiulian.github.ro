@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inregistrare</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+    
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <ul class="navbar-links">
+                <li><a href="index.html">ACASA</a></li>
+                <li><a href="cv.html">C.V.</a></li>
+                <li><a href="despre.html">DESPRE</a></li>
+                <li><a href="aplicatii.html">APLICATII</a></li>
+            </ul>
+            <div class="navbar-login">
+            <a href="Login.html" class="login-button">Login</a>
+            </div>
+        </nav>
+
+        <div>
+            <h1>Momentan Indispnibil</h1>
+        </div>
+    <div class="register-container">
+        <h2>Înregistrare</h2>
+        <form id="registerForm">
+            <label for="firstName">Prenume:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Nume:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Parolă:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="reason">Motivul pentru care sunteți pe site:</label>
+            <select id="reason" name="reason" required>
+                <option value="curiozitate">Curiozitate</option>
+                <option value="caut sa angajez un junior">Caut să angajez un junior</option>
+                <option value="in trecere">În trecere</option>
+            </select>
+
+            <button type="submit">Înregistrare</button>
+        </form>
+    </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="emailLogin">Email:</label>
+            <input type="email" id="emailLogin" name="emailLogin" required>
+
+            <label for="passwordLogin">Parolă:</label>
+            <input type="password" id="passwordLogin" name="passwordLogin" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="Login.js"></script>
+    
+</body>
+
+</html>

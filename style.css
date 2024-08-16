@@ -85,6 +85,7 @@ body {
     background-color: #4CAF50;
     color: white;
     border: none;
+    text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -235,6 +236,10 @@ body {
         width: 100%;
         margin-top: 10px;
     }
+        .tic-tac-toe-button {
+            width: 100%;
+            margin-top: 10px;
+        }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
@@ -256,6 +261,11 @@ body {
         width: auto;
         padding: 12px 24px;
     }
+
+          .tic-tac-toe-button {
+              width: auto;
+              padding: 12px 24px;
+          }
 }
 
 @media screen and (min-width: 901px) {
@@ -275,4 +285,7 @@ body {
     .calculator-button {
         padding: 15px 30px;
     }
+        .tic-tac-toe-button {
+            padding: 15px 30px;
+        }
 }
