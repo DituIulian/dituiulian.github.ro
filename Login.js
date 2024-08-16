@@ -109,4 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+document.getElementById("navbar").innerHTML = '<nav class="navbar">...</nav>';
+
 
