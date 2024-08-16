@@ -68,7 +68,27 @@ button:active {
 }
 
 
+.calculator-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #007bff;
+    /* Albastru închis */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.calculator-button:hover {
+    background-color: #0056b3;
+    /* Albastru mai închis la hover */
+}
 
 
 

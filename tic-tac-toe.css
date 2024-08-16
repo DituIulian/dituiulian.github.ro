@@ -1,0 +1,114 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #343a40;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.tic-tac-toe-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #495057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cell:hover {
+    background-color: #6c757d;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #5a6268;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        /* Navigarea pe mobil */
+    }
+
+    #display {
+        width: 100%;
+        font-size: 0.5em;
+    }
+
+    .calculator-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #display {
+        max-width: 400px;
+        font-size: 1.5em;
+    }
+
+    .calculator-button {
+        width: auto;
+        padding: 12px 24px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    body {
+        font-size: 18px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    #display {
+        max-width: 500px;
+        font-size: 2em;
+    }
+
+    .calculator-button {
+        padding: 15px 30px;
+    }
+}
