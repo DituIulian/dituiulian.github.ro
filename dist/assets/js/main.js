@@ -1,1 +1,20 @@
-const header=document.querySelector('[data-header]'),toggle=document.querySelector('.nav-toggle'),links=document.querySelector('.nav-links');const updateHeader=()=>header.classList.toggle('scrolled',scrollY>12);updateHeader();addEventListener('scroll',updateHeader,{passive:true});toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));links.classList.toggle('open',!open)});links.addEventListener('click',e=>{if(e.target.closest('a')){toggle.setAttribute('aria-expanded','false');links.classList.remove('open')}});document.querySelector('[data-year]').textContent=new Date().getFullYear();const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(item=>observer.observe(item));
+const toggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.nav-links');
+function closeMenu() {
+  toggle?.setAttribute('aria-expanded', 'false');
+  links?.classList.remove('open');
+}
+toggle?.addEventListener('click', () => {
+  const open = toggle.getAttribute('aria-expanded') !== 'true';
+  toggle.setAttribute('aria-expanded', String(open));
+  toggle.setAttribute('aria-label', open ? 'Închide meniul' : 'Deschide meniul');
+  links?.classList.toggle('open', open);
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && links?.classList.contains('open')) {
+    closeMenu();
+    toggle?.focus();
+  }
+});
+links?.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+document.querySelectorAll('[data-year]').forEach(node => { node.textContent = new Date().getFullYear(); });
